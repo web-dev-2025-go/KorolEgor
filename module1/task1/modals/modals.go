@@ -13,8 +13,8 @@ func NewPerson(name string, age uint8, hobby string) Person {
 }
 
 type Friend struct {
-	Person Person
-	Phone  string
+	Person
+	Phone string
 }
 
 func NewFriend(name string, age uint8, hobby, phone string) *Friend {
@@ -35,7 +35,7 @@ func (f *Friend) SetHobby(hobby string) {
 }
 
 type Me struct {
-	Person  Person
+	Person
 	Job     string
 	Logined bool
 }
@@ -66,8 +66,8 @@ func (m *Me) Logout() {
 }
 
 type Relative struct {
-	Person Person
-	Note   string
+	Person
+	Note string
 }
 
 func NewRelative(name string, age uint8, hobby, note string) *Relative {
